@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="calc.html">Flex Calculator</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1>Login form</h1>
+        <form
+          name="login"
+          class="login-form"
+          onsubmit="return formValidation()"
+        >
+          <table>
+            <tr>
+              <td><label for="username">Username:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="your username"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="your password"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="submit" value="Sign In" /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
